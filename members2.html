@@ -79,69 +79,38 @@
     <main class="main">
         <div class="container">
             <div class="main__inner">
-                <nav class="main__nav nav">
-                    <ul class="nav__list">
-                        <li class="nav__item">
-                            <a class="nav__link" href="#">
-                                Home
-                            </a>
-                        </li>
-                        <li class="nav__item">
-                            <a class="nav__link" href="#">
-                                Members Login
-                            </a>
-                        </li>
-                        <li class="nav__item">
-                            <a class="nav__link selected" href="#">
-                                Join now
-                            </a>
-                        </li>
-                        <li class="nav__item">
-                            <a class="nav__link" href="#">
-                                Preview
-                            </a>
-                        </li>
-                        <li class="nav__item">
-                            <a class="nav__link" href="#">
-                                Links
-                            </a>
-                        </li>
-                        <li class="nav__item">
-                            <a class="nav__link" href="#">
-                                Support
-                            </a>
-                        </li>
-                    </ul>
-                </nav>
-
-                <section class="main__support">
-                    <div class="support__inner">
-                        <h1 class="support__title title">
-                            Join Now
-                        </h1>
-                        <p class="support__attention">
-                            <strong>* Important! Achtung! L'attention! 注意!</strong>
-                        </p>
-                        <p class="support__text">
-                            Passwords for PayPal accounts will be activated during <strong>48 hours</strong> . You will
-                            receive personal password on e-mail which you filled in PayPal form. Your membership starts
-                            from the moment of password sending.
-                        </p>
-                        <div class="support__columns">
-                            <p class="support__column">
-                                PAY WITH <br> <strong>PAYPAL</strong> FOR:
-                            </p>
-                            <p class="support__column">
-                                <strong>One month</strong> <br>
-                                $29.95
-                            </p>
-                            <div class="support__column">
-                                <a class="support__column-link" href="#">
-                                    <img class="support__img" src="images/main/support/main.gif" alt="">
-                                </a>
-                            </div>
+                <section class="main__reg reg">
+                    <h1 class="reg__title">
+                        Please authorize:
+                    </h1>
+                    <form class="reg__form">
+                        <label class="reg__label">
+                            <span class="reg__label-text">
+                                Login:
+                            </span>
+                            <input class="reg__label-input" type="text" name="USER_LOGIN" maxlength="255">
+                        </label>
+                        <label class="reg__label">
+                            <span class="reg__label-text">
+                                Password:
+                            </span>
+                            <input class="reg__label-input" type="text" name="USER_PASSWORD" maxlength="255"
+                                autocomplete="off">
+                        </label>
+                        <div class="reg__bottom">
+                            <label class="reg__label-check">
+                                <input type="checkbox" name="USER_REMEMBER" value="Y">
+                                <span class="reg__label-check-text">
+                                    Remember me on this computer
+                                </span>
+                            </label>
+                            <a class="reg__link link" href="#" rel="nofollow">Forgot your password?</a>
+                            <button class="reg__btn" type="submit">
+                                Authorize
+                            </button>
                         </div>
-                    </div>
+                    </form>
+
                 </section>
             </div>
         </div>
